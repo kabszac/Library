@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: cornflowerblue;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',  Verdana, sans-serif ;
+}
+
+.main-container {
+    background-color: dodgerblue;
+    height: 100vh;
+    position: relative;
+}
+
+.nav {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 2px solid;
+    padding: 5px 0px;
+    margin-bottom: 8px;
+}
+
+/*newBook button*/
+.nbookbtn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 9px;
+    border-radius: 50%;
+    background-color: red;
+    font-weight: bold;
+    font-size: medium;
+}
+
+/*form*/
+.formContainer {
+    display: none;
+    border: 1px solid black;
+    padding: 20px;
+    background-color: white;
+    width: 20%;
+    position:absolute;
+    left: 420px;  
+}
+
+.new{
+    padding-bottom: 10px;
+}
+
+.close{
+    float: right;
+}
+
+.close:hover{
+    cursor: pointer;
+    color: black;
+    transform: scale(1.5);
+}
+
+#submit {
+    padding: 8px;
+    background-color: blue;
+    border-radius: 20px;
+}
+
+/* Display of books*/
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding: 90px 50px;
+    flex-wrap: wrap;
+}
+
+.book {
+    display: flex;
+    border: 2px solid black;
+    flex-direction: column;
+    padding: 30px;
+    background-color:hotpink;
+}
+
+.book .title {
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+.book .author{
+    margin-bottom: 10px;
+}
+
+.book .pages {
+    margin-bottom: 10px;
+}
+
+.book .read{
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 25px;
+    border: 1px solid black;
+}
+
+.book #deleteBtn {
+    padding: 8px;
+    background-color: grey;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+.book #deleteBtn:hover{
+    background-color: red;
+}

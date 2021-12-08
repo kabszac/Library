@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library</title>
+</head>
+<body>
+    <div class="main-container">
+        <nav class="nav"> <h1>Library</h1> </nav>
+        <button class="nbookbtn" onclick="showForm()">Add</button>
+        <div class="formContainer">
+            <div class="new"> <b>New Book</b>  <span class="close">&times;</span></div>
+            <form action="/app.js" id = "formElement"  method="">
+                <label for="title"> Title</label> <br>
+                <input type="text" id="title" name="title"> <br><br>
+            
+                <label for="author"> Author</label> <br>
+                <input type="text" id="author" name="author"> <br><br>
+
+                <label for="noofpgs"> Number of pages</label> <br>
+                <input type="number" id="noofpgs" name="noofpgs">  <br><br>
+
+                <label for="read">Read the book?</label><br />
+                <select name="read" id="read">
+                    <option value="Yes">Yes 😃</option>
+                    <option value="No">No 😢</option>
+                </select> <br><br>
+
+                <input type="submit" value="Submit" id="submit">
+            </form>
+        </div>
+    <div class="container"></div>
+    </div>
+        
+    <script src="app.js"></script>
+</body>
+</html>
